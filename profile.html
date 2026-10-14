@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Profile Cá Nhân</title>
+  <style>
+    /* Reset nhẹ để dễ căn chỉnh */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Định dạng nền chung cho trang */
+    body {
+      background-color: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* BƯỚC 2: Style khối card chính */
+    .profile-card {
+      width: 350px;
+      margin: 50px auto;                  /* Căn giữa card */
+      padding: 30px 20px;                 /* Tạo khoảng đệm bên trong */
+      border: 1px solid #e0e0e0;          /* Viền quanh card */
+      border-radius: 16px;                /* Bo góc card */
+      background-color: #ffffff;          /* Nền card */
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Đổ bóng nhẹ cho đẹp mắt */
+    }
+
+    /* BƯỚC 3: Style avatar */
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;                 /* Bo tròn avatar thành hình tròn */
+      border: 3px solid #007bff;    
+      object-fit: cover;      
+      margin-bottom: 15px;
+    }
+
+    /* BƯỚC 4: Style tên và nghề nghiệp */
+    .user-name {
+      font-size: 22px;
+      color: #333333;
+      margin-bottom: 5px;
+    }
+
+    .job-title {
+      font-size: 14px;
+      color: #007bff;                    
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    .bio {
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .skill-list {
+      list-style: none;                  
+      padding: 0;
+      margin-bottom: 25px;
+    }
+
+    .skill-item {
+      display: inline-block;              
+      background-color: #e9ecef;          
+      color: #495057;
+      padding: 6px 14px;                  
+      border-radius: 20px;               
+      font-size: 13px;
+      margin: 4px;                       
+    }
+    .btn-contact {
+      display: inline-block;
+      padding: 10px 24px;             
+      background-color: #007bff;        
+      color: #ffffff;                    
+      text-decoration: none;          
+      border-radius: 8px;             
+      font-weight: bold;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-contact:hover {
+      background-color: #0056b3;      
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <img src="https://via.placeholder.com/120" alt="Avatar" class="avatar">
+
+    <h1 class="user-name">Trần Quốc Hải</h1>
+
+    <p class="job-title">Lập trình viên Web / Sinh viên IT</p>
+
+    <p class="bio">
+      Tôi là một người đam mê công nghệ và yêu thích việc sáng tạo các ứng dụng web. 
+      Hiện tại tôi đang tập trung học tập và rèn luyện các kỹ năng lập trình giao diện người dùng.
+    </p>
+    <ul class="skill-list">
+      <li class="skill-item">HTML/CSS</li>
+      <li class="skill-item">JavaScript</li>
+      <li class="skill-item">Python</li>
+      <li class="skill-item">C#</li>
+    </ul>
+    <a href="mailto:example@email.com" class="btn-contact">Liên hệ</a>
+  </div>
+
+</body>
+</html>
